@@ -2,8 +2,13 @@ import type { MetadataRoute } from 'next';
 
 export const dynamic = 'force-static';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://talunza.co.zw/media';
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://talunza.co.zw/media').replace(/\/$/, '');
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: `${siteUrl}/`, changeFrequency: 'weekly', priority: 1 }];
+  const paths = ['', '/production', '/ai-studio', '/academy', '/services', '/about', '/contact'];
+  return paths.map((path, index) => ({
+    url: `${siteUrl}${path}/`,
+    changeFrequency: index === 0 ? 'weekly' : 'monthly',
+    priority: index === 0 ? 1 : 0.8,
+  }));
 }
