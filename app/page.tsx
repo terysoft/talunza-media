@@ -1,4 +1,5 @@
 const whatsapp = 'https://wa.me/263777323918?text=Hello%20Talunza%20Media%2C%20I%20would%20like%20to%20discuss%20a%20media%20or%20AI%20project.';
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 const pillars = [
   {
@@ -30,7 +31,7 @@ export default function HomePage() {
   return (
     <main>
       <header className="nav">
-        <a className="brand" href="#top"><img src="/talunza-logo.svg" alt="Talunza" /></a>
+        <a className="brand" href="#top"><img src={`${assetBase}/talunza-logo.svg`} alt="Talunza" /></a>
         <nav>
           <a href="#media">Media</a><a href="#studio">AI Studio</a><a href="#academy">Academy</a><a href="#work">What we make</a>
         </nav>
@@ -92,7 +93,7 @@ export default function HomePage() {
         <div className="actions"><a className="primary" href={whatsapp}>WhatsApp Talunza Media</a><a className="secondary" href="tel:+263777323918">Call 0777 323 918</a></div>
       </section>
 
-      <footer><img src="/talunza-logo.svg" alt="Talunza"/><p>Media Production · AI Studio · Academy</p><a href="https://talunza.co.zw">talunza.co.zw</a></footer>
+      <footer><img src={`${assetBase}/talunza-logo.svg`} alt="Talunza"/><p>Media Production · AI Studio · Academy</p><a href="https://talunza.co.zw">talunza.co.zw</a></footer>
     </main>
   );
 }
