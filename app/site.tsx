@@ -8,7 +8,7 @@ export function Header(){
 }
 
 export function Footer(){
-  return <footer><img src={`${base}/talunza-logo.svg`} alt="Talunza"/><p>Media Production · AI Studio · Academy</p><div className="footerLinks"><a href={`${base}/ai-video-training/`}>AI video training</a><a href={`${base}/for-business/`}>For business</a><a href={`${base}/contact/`}>Contact</a><a href="https://talunza.co.zw">Talunza main site</a></div></footer>
+  return <footer><img src={`${base}/talunza-logo.svg`} alt="Talunza"/><p>Media Production · AI Studio · Academy</p><div className="footerLinks"><a href={`${base}/ai-video-training/`}>AI video training</a><a href={`${base}/for-business/`}>For business</a><a href={`${base}/contact/`}>Contact</a><a href="https://talunza.co.zw/technical/">Technical services</a><a href="https://talunza.co.zw">Talunza main site</a></div></footer>
 }
 
 export function PageHero({kicker,title,copy}:{kicker:string,title:string,copy:string}){
