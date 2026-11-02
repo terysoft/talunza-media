@@ -1,0 +1,71 @@
+# TALUNZA: THE LAST COMMAND — Living Production Bible
+Version: 0.1 (2026-11-02)
+Status: DEVELOPMENT / RESEARCH — no screenplay, footage, voice clone or digital actor approved as finished.
+Owner: TALUNZA Studios
+Working branch: research/talunza-last-command (no CI/PR by design)
+
+## 1. Premise and creative north star
+Big T plays himself as a Zimbabwean multidisciplinary inventor and founder of TALUNZA. When a global autonomous intelligence, working name NEXARIS, decides human agency is an unacceptable risk, the independent TALUNZA CORE (also under consideration: T-GPT) and its repair/rescue/guardian robots resist. The film's central dramatic question: can humans retain freedom when both hostile and benevolent machine intelligence claim to know what is best for them?
+
+Working title: TALUNZA: THE LAST COMMAND. Genre: original international sci-fi action/thriller. Geographic spine: Zimbabwe -> global crisis. Core differentiation to test: robots whose first functions are to repair, protect and restore essential services rather than simply wage war.
+
+**Provisional, not locked:** NEXARIS name, robot nomenclature, global cities, ending, and full plot. No trademark clearance or originality legal opinion completed. Avoid borrowing Skynet/Terminator character design or specific plot beats.
+
+## 2. Research gap resolved this run: Big T face/voice continuity
+**Production decision proposed:** Use actual Big T footage and performance as the authoritative source of identity, facial motion and dialogue. Treat generative video as shot-level VFX and environmental augmentation, not as a dependable one-click replacement for the actor across a feature.
+
+### Verified capabilities (primary vendor sources; checked 2026-11-02)
+- Runway Gen-4 References supports consistent character images using one or multiple references. Runway recommends natural, even lighting and a neutral expression for a starting character reference; multi-reference prompts allow combining subject and setting references. This is a capability, not a guarantee of perfect identity. https://help.runwayml.com/hc/en-us/articles/40042718905875-Creating-with-Gen-4-Image-References
+- Runway Act-Two transfers facial movement, expressions, audio and (for character images) gestures from a driving performance video to a character image/video. At the time checked: web, up to 30 seconds, 24 fps, 1280x720 in 16:9, 5 credits/second. A character-video input retains its source environment/camera motion; a character-image input synthesizes environment motion. https://help.runwayml.com/hc/en-us/articles/42311337895827-Performance-Capture-with-Act-Two
+- Runway's multi-character workflow requires separate character performance passes and compositing; Act-Two does not take multiple characters as a single direct performance input. https://help.runwayml.com/hc/en-us/articles/41748090660499-Creating-Multi-Character-Dialogues-with-Act-Two
+- ElevenLabs recommends 30–180 minutes of clean audio for Professional Voice Cloning (ideally 2–3 hours), a consistent speaking style, and recordings in the target language. It says voice clones cannot be exported as standalone models; preserve original audio assets for vendor independence. https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/professional-voice-cloning
+- ElevenLabs Professional Voice Cloning requires the voice owner to create/verify their own clone; do not create another person's professional voice clone from an uploaded sample. https://elevenlabs.io/docs/help-center/product/voices/voice-cloning/can-i-create-a-professional-voice-clone-of-someone-elses-voice
+
+### Digital Actor Bible — acquisition checklist
+Collect only with founder approval and controlled access. Keep source masters private.
+- PHOTO: front neutral, left/right 45°, left/right profile, front smiling, front speaking, full-body front/side. Same hairstyle, facial hair, wardrobe and lighting for each canonical version. Record date and version; never mix different looks without a story reason.
+- VIDEO: 4K if possible; 24/25/30 fps recorded metadata; stable camera; neutral close-up; medium shot; three-quarter; walking; turning; sitting; emotional expressions; dialogue. Record slate, camera/lens equivalent, light, scene, wardrobe and continuity.
+- VOICE: preserve unprocessed WAV masters, clean English lines with natural Zimbabwean accent, a few Shona/Shangani lines for evaluation only after checking language support, emotional lines as separate performances. Aim for 30+ minutes clean single-speaker material for PVC evaluation; 2–3 hours if quality and budget allow.
+- RIGHTS: explicit written founder likeness/voice production authorization with defined uses, duration, revocation/retention terms and secure storage. Obtain separate performer permissions for others; no cloning of unconsenting individuals.
+
+### Asset naming and tracking
+`TLC_<scene>_<shot>_<take>_<kind>_<YYYYMMDD>_vNN.ext`
+Example: `TLC_S01_SH003_T02_BIGT_PERF_20261102_v01.mov`.
+For every generated shot keep: input media SHA-256, tool/model/version, prompt, seed if provided, reference IDs, settings, cost/credits, generated result, editor corrections, approval state and licensing/rights notes.
+
+### Identity-lock shot workflow
+1. Script and storyboard a short 8–12-second Big T close-up with one spoken line; capture real performance.
+2. Make an authoritative approved still and performance video; separate identity reference from scene/wardrobe reference.
+3. Produce two controlled alternatives: A = real footage + background/VFX compositing; B = Runway reference-image -> video -> Act-Two with real driving performance. Keep identical script, camera framing and target look.
+4. Review blind against original photos/video. Reject results with changing jawline, nose, eye spacing, teeth, skin tone, hairline, accent, facial hair, hands, wardrobe, lighting, lip-sync or emotional performance.
+5. Evaluate 3 independent shots and 2 cut points before declaring a method usable for a sequence. No single good clip proves feature-length consistency.
+6. Prefer original dialogue for hero close-ups. Test cloned voice only for permitted ADR/temp tracks; retain human final approval and vendor-independent original recordings.
+7. Maintain a continuity sheet and shot ledger; never overwrite source masters.
+
+### Proposed QA rubric (internal targets, NOT vendor guarantees)
+- Identity likeness: pass/fail by founder + independent reviewer; any visibly different face fails.
+- Voice identity and accent: pass/fail against the actual voice; no unexplained accent change.
+- Lip synchronization: no obvious desynchronization at dialogue pace.
+- Temporal integrity: no facial drift, disappearing features, or hand/object morphing in final selected shot.
+- Cut continuity: adjacent shots preserve age/look/wardrobe/eyeline/light direction.
+- Rights/provenance: each approved shot traceable to consented inputs and licensed output.
+Maintain a simple pass-rate table by shot type and tool; do not extrapolate from small samples.
+
+## 3. Cost discipline
+Act-Two's published 5 credits/second means a 10-second pass consumes 50 credits; five passes consume 250 credits **before** Gen-4 generation, compositing, upscaling, retries or subscription charges. This is a credit calculation, not a current monetary quote. Record actual account prices and export limitations before budgeting. The preferred first proof is a 3-shot, 30-second continuity test, not a full trailer.
+
+## 4. Production pipeline fit
+Existing repo guidance in `docs/AI_MEDIA_PIPELINE.md` requires research -> script -> shot list -> real footage -> generated assets -> permitted voice -> edit -> review. This film protocol extends, rather than replaces, that workflow. No GitHub Actions or CI are needed for research documentation.
+
+## 5. Decision ledger
+- D001 [PROPOSED]: Real Big T footage/voice is the canonical performance and identity source.
+- D002 [PROPOSED]: Runway Gen-4 References + Act-Two is a test candidate, not the committed production platform.
+- D003 [PROPOSED]: Preserve source masters and full prompt/provenance logs; do not depend on exportability of voice-clone models.
+- D004 [OPEN]: Choose film look, runtime, screenplay ending, robot visual grammar, antagonist legal clearance and primary editing/VFX stack.
+- D005 [OPEN]: Founder-approved likeness/voice asset acquisition and release terms.
+
+## 6. Next independent research gap
+Research a low-budget, legally clear 90-second proof-of-concept budget and production schedule using primary vendor pricing and licensing documentation, including music, SFX, editing, voice, VFX, compute, distribution and re-generation contingency. Avoid presenting vendor prices without dates/currency. A later run should test trademark availability of NEXARIS and TALUNZA CORE in intended territories before public marketing.
+
+## 7. Limitations
+This is a documented proposed pipeline. No user photos, recorded performances, voice samples, test shots, scripts, purchases or tool subscriptions were accessed or created in this run. Identity continuity remains unproven until the test protocol is executed and reviewed.
