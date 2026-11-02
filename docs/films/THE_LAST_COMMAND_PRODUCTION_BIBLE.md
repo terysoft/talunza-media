@@ -1,5 +1,5 @@
 # TALUNZA: THE LAST COMMAND — Living Production Bible
-Version: 0.1 (2026-11-02)
+Version: 0.2 (2026-11-02)
 Status: DEVELOPMENT / RESEARCH — no screenplay, footage, voice clone or digital actor approved as finished.
 Owner: TALUNZA Studios
 Working branch: research/talunza-last-command (no CI/PR by design)
@@ -64,8 +64,22 @@ Existing repo guidance in `docs/AI_MEDIA_PIPELINE.md` requires research -> scrip
 - D004 [OPEN]: Choose film look, runtime, screenplay ending, robot visual grammar, antagonist legal clearance and primary editing/VFX stack.
 - D005 [OPEN]: Founder-approved likeness/voice asset acquisition and release terms.
 
-## 6. Next independent research gap
-Research a low-budget, legally clear 90-second proof-of-concept budget and production schedule using primary vendor pricing and licensing documentation, including music, SFX, editing, voice, VFX, compute, distribution and re-generation contingency. Avoid presenting vendor prices without dates/currency. A later run should test trademark availability of NEXARIS and TALUNZA CORE in intended territories before public marketing.
+## 6. Budget and 90-second teaser checkpoint (research gap resolved 2026-11-02)
+Detailed evidence, shot timing, assumptions and credit formulas: [TLC_90S_TRAILER_BUDGET_AND_SHOT_PLAN.md](TLC_90S_TRAILER_BUDGET_AND_SHOT_PLAN.md).
+
+**Decision proposal:** 45 seconds of real Big T performance, 42 seconds of generative crisis/robot visuals and 3 seconds of title. Five AI shots at 10 billable seconds each, three takes each, cost 1,800 Runway Gen-4.5 credits; 20 concept images (~160 credits) and two 10s Act-Two tests (100 credits) leave 190 of a Pro plan's 2,250 credits. This is a very tight capacity plan, not a promise of usable shots. Runway Pro is listed at $35/month; Max at $95/month with 9,500 credits. DaVinci Resolve free is the primary editor; use original founder dialogue; Pixabay audio may be usable under documented commercial licensing but Content ID claims remain possible. Optional ElevenLabs Creator regular price $22/month. Taxes, bank/FX fees, internet, equipment, paid labor, music and local logistics are not verified or included in these vendor subscription totals.
+
+Sources checked 2026-11-02: https://runway.com/pricing ; https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work ; https://www.blackmagicdesign.com/products/davinciresolve/media ; https://elevenlabs.io/pricing ; https://pixabay.com/service/faq/ ; https://help.artlist.io/hc/en-us/articles/29559573229725-Artlist-s-Music-and-SFX-plans-explained .
+
+### Added decisions
+- D006 [PROPOSED]: Mix real hero footage with limited AI action footage for the 90-second teaser.
+- D007 [PROPOSED]: Edit with DaVinci Resolve free; prioritize actual founder voice over cloning.
+- D008 [PROPOSED]: Runway Pro is the tight low-cash option; Max is preferred for revision headroom if available.
+- D009 [OPEN]: Select original/licensed music with recorded rights; no blanket rights assumptions.
+- D010 [OPEN]: Confirm actual filming kit, access and costs in Zimbabwe before purchases.
+
+## 6A. Next independent research gap
+Develop original, consistent robot design bible and reference/prompt protocol for Guardian, Forge, Life, Reaper and NEXARIS. Follow with trademark clearance and an international festival/distribution strategy; no public release of un-cleared designs.
 
 ## 7. Limitations
 This is a documented proposed pipeline. No user photos, recorded performances, voice samples, test shots, scripts, purchases or tool subscriptions were accessed or created in this run. Identity continuity remains unproven until the test protocol is executed and reviewed.
