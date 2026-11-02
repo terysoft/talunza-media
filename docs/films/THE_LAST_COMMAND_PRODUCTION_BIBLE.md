@@ -94,3 +94,14 @@ Evidence and source links: [TLC_TEASER_FESTIVAL_PREMIERE_SAFEGUARDS.md](TLC_TEAS
 - D014 [OPEN]: Establish eventual feature completion date and festival target year, review edition-specific AI disclosures and premiere rules, and conduct title/character trademark clearance.
 - Publication wording: 'A TALUNZA Studios original feature film in development' / 'Official teaser premiere — 4 June 2027'.
 - Next independent research gap: promotional IP and rights-clearance inventory for international release (title, NEXARIS, robots, music, likeness/voice and generative output licensing).
+
+
+## 9. Rights and naming collision checkpoint (2026-11-03)
+Detailed evidence, territory-specific clearance plan and risk matrix: [TLC_IP_LIKENESS_CLEARANCE_RISK_REGISTER.md](TLC_IP_LIKENESS_CLEARANCE_RISK_REGISTER.md).
+
+- D015 [OPEN/HIGH RISK]: **NEXARIS** is actively used by multiple real-world AI/software businesses. Keep as an internal *working* antagonist name pending trademark and entertainment clearance; no claim of exclusivity.
+- D016 [VERIFIED]: **The Last Command** was previously used as the title of 1928 and 1955 films; the TALUNZA prefix helps identify our project but does not constitute legal clearance.
+- D017 [VERIFIED, US LAW]: The USPTO generally refuses registration of a title used solely for one creative work; human creative authorship matters for protection of AI-assisted outputs under US Copyright Office guidance.
+- D018 [PROPOSED]: Record scoped performer consent, source performances, synthetic-media permissions and shot-level provenance privately before final teaser publication. The user-supplied face photo is reference material, not a completed signed production release.
+- D019 [OPEN]: WIPO/CIPZ/USPTO/EUIPO/ARIPO formal registry search, legal title clearance, name alternatives, music and AI-output licenses, performer releases, E&O/distribution review.
+- Next independent gap: screen distinctive alternate antagonist names and build an implementable asset/rights manifest; avoid unilateral rename until a consistent replacement strategy is documented.
