@@ -1,5 +1,5 @@
 # TALUNZA: THE LAST COMMAND — Living Production Bible
-Version: 0.2 (2026-11-02)
+Version: 0.3 (2026-11-02)
 Status: DEVELOPMENT / RESEARCH — no screenplay, footage, voice clone or digital actor approved as finished.
 Owner: TALUNZA Studios
 Working branch: research/talunza-last-command (no CI/PR by design)
@@ -83,3 +83,14 @@ Develop original, consistent robot design bible and reference/prompt protocol fo
 
 ## 7. Limitations
 This is a documented proposed pipeline. No user photos, recorded performances, voice samples, test shots, scripts, purchases or tool subscriptions were accessed or created in this run. Identity continuity remains unproven until the test protocol is executed and reviewed.
+
+
+## 8. Teaser launch and international festival premiere policy (checkpoint 04, 2026-11-02)
+Evidence and source links: [TLC_TEASER_FESTIVAL_PREMIERE_SAFEGUARDS.md](TLC_TEASER_FESTIVAL_PREMIERE_SAFEGUARDS.md).
+
+- D011 [PROPOSED]: Public 90-second **promotional teaser** target: Friday 4 June 2027. This is NOT the feature-film release date and remains conditional on quality, rights and identity gates.
+- D012 [PROPOSED]: Keep the 10–15-minute proof-of-concept and any full feature cut private until festival and distribution strategy is chosen.
+- D013 [VERIFIED]: Cannes and Sundance impose important prior online exhibition and premiere restrictions on submitted feature films; individual festivals may accept or publish promotional trailers. Future-edition rules require rechecking; this is not a guarantee of eligibility.
+- D014 [OPEN]: Establish eventual feature completion date and festival target year, review edition-specific AI disclosures and premiere rules, and conduct title/character trademark clearance.
+- Publication wording: 'A TALUNZA Studios original feature film in development' / 'Official teaser premiere — 4 June 2027'.
+- Next independent research gap: promotional IP and rights-clearance inventory for international release (title, NEXARIS, robots, music, likeness/voice and generative output licensing).
