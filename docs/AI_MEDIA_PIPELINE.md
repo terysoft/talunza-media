@@ -61,3 +61,15 @@ Create a minimal version-controlled template that accepts:
 - aspect ratio.
 
 Do not scale the media engine until this template renders reliably and passes phone viewing tests.
+
+## 2026-11-13 founder/AI continuity assurance (applies to all media lanes)
+This pipeline must load `terysoft/talunza-documents/preload/19_WORKFLOW_ASSURANCE_AND_ASSET_CUSTODY.md` + media-specific SOP and latest checkpoint **before** writing a script, generating clips or rendering another 'final'.
+
+- Recover actual master assets from ChatGPT Library using file-type inventory if semantic title search fails; inspect duplicate-suffixed names. For CashTalk, original 4s/5s locked opener/closer recovered and SHA256-verified in `terysoft/talunza-documents/media/cashtalk/LOCKED_ASSETS_REGISTRY.md`.
+- Story -> facts -> authentic media -> narrator availability -> scene/continuity QA -> branded master assembly -> export QA -> attachment -> founder-confirmed phone download. Each milestone has evidence, not merely a completion-sounding filename.
+- A scenes-only clip with missing brand/voice is a REVIEW CUT even if it is a playable MP4; do not answer a final-film request with a re-encoded review and call it solved.
+- Flow audio gate: verify model, credit price/duration and project 'Return silent videos' OFF for any voice-required production; native voice references depend on compatible Ingredients model. Video-editing uploaded footage cannot add/change speech; use separate true audio generation/mixing if available, no founder-operated CapCut.
+- Editing without CapCut: assistant handles verified available clips and audio via Flow Scenebuilder or local FFmpeg/programmatic media pipeline. No claim of rendered narration unless intelligible spoken audio is actually reviewed.
+- Tool/runtime custody: GitHub runbooks and Library IDs can persist; container `/mnt/data` paths are session-local and must be verified afresh. Do not infer past attached files are mounted or missing from search alone.
+- Always mark asset status: DISCOVERED / MATERIALIZED / PROBED / REVIEWED; output status: PROMPT / SCENE / REVIEW_CUT / FINAL_QA / ATTACHED / DOWNLOADED / PUBLISHED. Never skip gates.
+- Workstream-specific acceptance gates and evidence templates live in source-of-truth documents; don't launch a new speculative video app.
