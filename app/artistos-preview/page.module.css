@@ -28,3 +28,6 @@
 .closing a{background:#fff;color:#09283d}
 @media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.hero,.section,.alt,.closing{padding:3rem 1.25rem}.grid{grid-template-columns:1fr}.links{gap:.55rem}.links a{font-size:.8rem}}
+
+.bookingLink{display:inline-block;background:#0a628a;color:#fff;text-decoration:none;border-radius:.65rem;padding:.85rem 1.05rem;font-weight:800}
+.bookingLink:focus-visible{outline:3px solid #45c1ff;outline-offset:3px}
