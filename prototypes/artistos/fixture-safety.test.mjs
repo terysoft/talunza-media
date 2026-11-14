@@ -36,3 +36,14 @@ test('fixture is not imported by public app route files', () => {
   }
   walk(appDir);
 });
+
+test('fixture does not embed unlicensed media or outbound calls to action', () => {
+  assert.doesNotMatch(preview, /<(?:audio|video|iframe|img|picture|source|script)\b/i);
+  assert.doesNotMatch(preview, /\b(?:src|href|action|poster)\s*=/i);
+  assert.doesNotMatch(preview, /\b(?:window\.open|navigator\.share|document\.cookie)\b/);
+});
+test('fixture does not suggest live booking, royalty or fan collection', () => {
+  assert.match(preview, /Enquiries unavailable in preview/);
+  assert.match(preview, /No fan registration or contact collection is enabled/);
+  assert.match(preview, /not a royalty statement or proof of ownership/);
+});
