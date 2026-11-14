@@ -45,7 +45,7 @@ export default function ArtistOSPreview() {
           <div><dt>Press kit</dt><dd>Sample content only</dd></div>
           <div><dt>Booking pipeline</dt><dd>Design preview · inactive</dd></div>
           <div><dt>Fan subscriptions</dt><dd>Disabled until consent and security review</dd></div>
-          <div><dt>Release metrics</dt><dd>No tracking enabled</dd></div>
+          <div><dt>Release metrics</dt><dd>No ArtistOS campaign metrics</dd></div>
         </dl>
       </aside>
     </section>
@@ -60,7 +60,7 @@ export default function ArtistOSPreview() {
       <h2 id="release-title">Plan promotion around music and measurable business outcomes.</h2>
       <p>Zimbabwe-specific channels can include radio, WhatsApp, short video, live shows and diaspora communities.</p>
       <ol className={styles.grid}>{releases.map(([stage,copy])=><li className={styles.card} key={stage}><h3>{stage}</h3><p>{copy}</p></li>)}</ol>
-      <p className={styles.note}>Campaign links and statistics are not active. Official platform analytics require authorised access.</p>
+      <p className={styles.note}>ArtistOS campaign links and statistics are not active. Existing site-wide analytics may still apply; official platform analytics require authorised access.</p>
     </section>
     <section className={styles.section} id="bookings" aria-labelledby="bookings-title">
       <p className={styles.kicker}>03 · BOOKING OPERATIONS</p>
