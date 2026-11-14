@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Header, Footer } from '../site';
+import { Header, Footer, base } from '../site';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -67,6 +67,7 @@ export default function ArtistOSPreview() {
       <h2 id="bookings-title">Do not let an enquiry disappear between messages.</h2>
       <div className={styles.grid}>{bookings.map(([stage,copy])=><article className={styles.card} key={stage}><h3>{stage}</h3><p>{copy}</p></article>)}</div>
       <p className={styles.note}>No contact form, payment collection or database is connected. Bookings require an authorised private backend, anti-abuse controls and retention rules.</p>
+      <p><a className={styles.bookingLink} href={base + '/artistos-preview/booking-readiness/'}>Try the fictional booking readiness checklist →</a></p>
     </section>
     <section className={styles.alt} id="rights" aria-labelledby="rights-title">
       <p className={styles.kicker}>04 · RIGHTS RECORDKEEPING</p>
