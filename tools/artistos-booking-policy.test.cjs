@@ -1,0 +1,24 @@
+'use strict';
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const {evaluateBookingTransition} = require('./artistos-booking-policy.cjs');
+const booking = (status='ENQUIRY', revision=3) => ({status,revision,artistRef:'artist:demo-a',workspaceRef:'workspace:demo-a'});
+const ctx = (overrides={}) => ({serverAuthorityChecked:true,artistRef:'artist:demo-a',workspaceRef:'workspace:demo-a',actorRef:'actor:demo-manager',canManageBooking:true,expectedRevision:3,artistApprovalRecorded:true,writtenTermsReviewed:true,performanceEvidenceRecorded:true,cancellationReviewed:true,...overrides});
+const check = (b,to,c,decision,reason) => assert.deepEqual(evaluateBookingTransition(b,to,c),{decision,reason});
+
+test('permits an authorised request for further information',()=>check(booking(),'MORE_INFO_REQUIRED',ctx(),'ALLOW','PERMITTED_BY_FIXTURE'));
+test('cannot confirm directly from an enquiry',()=>check(booking(),'CONFIRMED',ctx(),'DENY','INVALID_TRANSITION'));
+test('missing server authority must defer',()=>check(booking(),'OFFER_RECEIVED',ctx({serverAuthorityChecked:false}),'DEFER','SERVER_AUTHORITY_REQUIRED'));
+test('cannot cross artists',()=>check(booking(),'OFFER_RECEIVED',ctx({artistRef:'artist:demo-b'}),'DENY','CROSS_ARTIST_OR_WORKSPACE'));
+test('cannot cross workspaces',()=>check(booking(),'OFFER_RECEIVED',ctx({workspaceRef:'workspace:demo-b'}),'DENY','CROSS_ARTIST_OR_WORKSPACE'));
+test('role names alone cannot manage bookings',()=>check(booking(),'OFFER_RECEIVED',ctx({canManageBooking:false}),'DENY','MISSING_ARTIST_SCOPED_PERMISSION'));
+test('stale revisions defer',()=>check(booking(),'OFFER_RECEIVED',ctx({expectedRevision:2}),'DEFER','STALE_OR_UNKNOWN_REVISION'));
+test('artist approval is necessary to confirm',()=>check(booking('AWAITING_ARTIST_APPROVAL'),'CONFIRMED',ctx({artistApprovalRecorded:false}),'REQUIRE_APPROVAL','ARTIST_APPROVAL_REQUIRED'));
+test('reviewed written terms are necessary',()=>check(booking('AWAITING_ARTIST_APPROVAL'),'CONFIRMED',ctx({writtenTermsReviewed:false}),'DEFER','WRITTEN_TERMS_REVIEW_REQUIRED'));
+test('approved, reviewed agreement may confirm',()=>check(booking('AWAITING_ARTIST_APPROVAL'),'CONFIRMED',ctx(),'ALLOW','PERMITTED_BY_FIXTURE'));
+test('unverified performance cannot be completed',()=>check(booking('CONFIRMED'),'COMPLETED',ctx({performanceEvidenceRecorded:false}),'DEFER','PERFORMANCE_EVIDENCE_REQUIRED'));
+test('cancellation requires review',()=>check(booking('CONFIRMED'),'CANCELLED',ctx({cancellationReviewed:false}),'REQUIRE_APPROVAL','CANCELLATION_REVIEW_REQUIRED'));
+test('terminal records cannot be silently reopened',()=>check(booking('COMPLETED'),'ENQUIRY',ctx(),'DENY','INVALID_TRANSITION'));
+test('invalid states deny',()=>check(booking('GHOST'),'DECLINED',ctx(),'DENY','INVALID_CURRENT_STATUS'));
+test('unknown revision defers',()=>check(booking('ENQUIRY',null),'OFFER_RECEIVED',ctx(),'DEFER','STALE_OR_UNKNOWN_REVISION'));
+test('pure evaluation does not mutate inputs',()=>{const b=booking();const c=ctx();evaluateBookingTransition(b,'MORE_INFO_REQUIRED',c);assert.equal(b.status,'ENQUIRY');assert.equal(c.expectedRevision,3);});
