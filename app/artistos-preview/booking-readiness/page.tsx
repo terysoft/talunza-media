@@ -20,7 +20,7 @@ export default function BookingReadinessPreview() {
       <header className={styles.intro}>
         <p className={styles.kicker}>TALUNZA ARTISTOS · ZIMBABWE BOOKING READINESS</p>
         <h1>Before saying yes to a performance.</h1>
-        <p>Review the commercial and practical details that should be clear before a musician or manager confirms a show. No details are requested or sent anywhere.</p>
+        <p>Review the commercial and practical details that should be clear before a musician or manager confirms a show. The checklist does not ask for contact details or transmit your selections.</p>
       </header>
       <BookingReadiness />
       <aside className={styles.disclaimer}>
