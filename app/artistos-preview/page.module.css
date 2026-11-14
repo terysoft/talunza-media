@@ -1,0 +1,30 @@
+.warning{margin:0;padding:.85rem 1.25rem;background:#0a2940;color:#fff;text-align:center;font-size:.75rem;font-weight:900;letter-spacing:.06em;line-height:1.5}
+.hero{padding:5rem max(1.25rem,8vw);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:2.5rem;align-items:center;background:linear-gradient(125deg,#f3fafc,#e5f2fa)}
+.kicker{color:#196b87;text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:900}
+.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);line-height:1.03;letter-spacing:-.05em;margin:.5rem 0 1rem}
+.lead{font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.6;max-width:41rem;color:#314d60}
+.small{font-size:.82rem;line-height:1.6;color:#597084;max-width:40rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.65rem 0 0}
+.links a,.closing a{display:inline-block;background:#0a6295;color:#fff;border-radius:.65rem;padding:.75rem 1.05rem;text-decoration:none;font-size:.88rem;font-weight:800}
+.links a:focus-visible,.closing a:focus-visible{outline:3px solid #45c1ff;outline-offset:3px}
+.status{padding:1.6rem;border-radius:1.2rem;background:#082b40;color:#fff}
+.status h2{font-size:clamp(1.55rem,2.3vw,2.2rem);line-height:1.2}
+.status dl{margin:1.35rem 0 0}
+.status dl div{border-top:1px solid #416173;padding:.85rem 0}
+.status dt{font-weight:800}
+.status dd{margin:.35rem 0 0;color:#c7e0ec;font-size:.89rem;line-height:1.45}
+.section,.alt{padding:4.5rem max(1.25rem,8vw)}
+.alt{background:#eaf4f8}
+.section h2,.alt h2,.closing h2{font-size:clamp(2rem,4vw,3.25rem);max-width:52rem;line-height:1.14}
+.section>p:not(.kicker),.alt>p:not(.kicker){max-width:48rem;color:#465e6d;line-height:1.7}
+.grid{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;padding:0;margin:1.8rem 0}
+.card{padding:1.5rem;background:#fff;border:1px solid #c7dee8;border-radius:1rem;min-width:0}
+.card h3{margin:.2rem 0 .75rem;font-size:1.2rem}
+.card p{color:#516978;line-height:1.6}
+.card small{color:#247392;font-weight:750}
+.note{padding:.9rem 1rem;background:#fff;border-left:4px solid #0c6c9c;color:#3e5769;line-height:1.65}
+.closing{padding:4rem max(1.25rem,8vw);background:#09283d;color:#fff}
+.closing p{max-width:52rem;line-height:1.7;color:#d3e7f0}
+.closing a{background:#fff;color:#09283d}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.hero,.section,.alt,.closing{padding:3rem 1.25rem}.grid{grid-template-columns:1fr}.links{gap:.55rem}.links a{font-size:.8rem}}
