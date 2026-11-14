@@ -24,6 +24,8 @@ function scan(dir, findings) {
 
 test('no application source references the private ArtistOS fixture', () => {
   const findings = [];
-  for (const root of roots) if (existsSync(root)) scan(root, findings);
+  const existingRoots = roots.filter(existsSync);
+  assert.ok(existingRoots.length > 0, 'No application source roots found; refusing vacuous pass');
+  for (const root of existingRoots) scan(root, findings);
   assert.deepEqual(findings, [], 'Fixture referenced from application source: ' + findings.join(', '));
 });
