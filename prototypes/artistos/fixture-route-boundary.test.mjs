@@ -29,3 +29,24 @@ test('no application source references the private ArtistOS fixture', () => {
   for (const root of existingRoots) scan(root, findings);
   assert.deepEqual(findings, [], 'Fixture referenced from application source: ' + findings.join(', '));
 });
+
+test('synthetic ArtistOS content is absent from public static assets', () => {
+  assert.ok(existsSync('public'), 'Missing public asset directory; refusing vacuous pass');
+  const findings = [];
+  function walkPublic(dir) {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const file = join(dir, entry.name);
+      if (entry.isDirectory()) walkPublic(file);
+      else if (entry.isFile()) {
+        const rel = relative('.', file);
+        if (/artistos|fixturepreview|demo[-_ ]musician/i.test(rel)) findings.push(rel);
+        if (/\.(?:html?|css|js|mjs|json|svg|txt|xml|md)$/i.test(entry.name)) {
+          const source = readFileSync(file, 'utf8');
+          if (/ArtistOSFixturePreview|INTERNAL SYNTHETIC FIXTURE|NOT AN ARTIST PROFILE|Demo Musician/.test(source)) findings.push(rel);
+        }
+      }
+    }
+  }
+  walkPublic('public');
+  assert.deepEqual([...new Set(findings)], [], 'Synthetic fixture leaked into public assets');
+});
