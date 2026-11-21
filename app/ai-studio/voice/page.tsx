@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import { Footer, Header, PageHero, whatsapp } from '../../site';
 
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://talunza.co.zw/media').replace(/\/$/, '');
+
 export const metadata: Metadata = {
+  alternates: { canonical: `${siteUrl}/ai-studio/voice/` },
   title: 'AI Voiceovers, Narration & Audio Production in Zimbabwe',
   description: 'TALUNZA Studio offers scripted voiceovers, narration, audio clean-up and multilingual audio production for Zimbabwean businesses and creators, with consent and human review.',
 };
