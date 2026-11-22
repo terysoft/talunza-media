@@ -1,4 +1,7 @@
-import {Footer,Header,base,whatsapp} from './site';
+import {Footer,Header,base} from './site';
+import {mediaRouteMetadata} from './media-route-metadata';
+
+export const metadata = mediaRouteMetadata('', 'Production, AI Studio and practical training', 'Video production, AI-assisted creative services and practical media training in Zimbabwe.');
 
 const pillars=[
   {title:'Media Production',copy:'Phone-first filming and production for weddings, events, dramas, interviews, creator content, adverts and business stories.',href:'/production/'},
@@ -9,7 +12,7 @@ const formats=['Weddings & events','Short films & local drama','Interviews & pro
 const ai=['Script & concept development','Storyboards and shot planning','Subtitles and transcription','Graphics and promotional artwork','Voice and audio enhancement','Music ideation','Editing assistance','VFX experimentation','Content repurposing','Campaign support'];
 
 export default function HomePage(){return <main><Header/>
-  <section className="hero" id="top"><div className="heroCopy"><p className="eyebrow">TALUNZA MEDIA · ZIMBABWE</p><h1>Real stories. Better production. Smarter tools.</h1><p className="lede">We combine practical filming, editing and storytelling with selective AI tools to help people and organisations create work that looks stronger, communicates clearly and travels further.</p><div className="actions"><a className="primary" href={whatsapp}>Discuss your project</a><a className="secondary" href={`${base}/services/`}>Explore services</a></div><p className="micro">Not “AI-only”. We shoot real people, real places and real work — then use technology where it adds value.</p></div><div className="heroPanel"><div className="frame"><strong>Capture</strong><small>Real-world phone-first production</small></div><div className="frame"><strong>Craft</strong><small>Edit, design, sound and story</small></div><div className="frame"><strong>Amplify</strong><small>AI-assisted finishing and distribution</small></div></div></section>
+  <section className="hero" id="top"><div className="heroCopy"><p className="eyebrow">TALUNZA MEDIA · ZIMBABWE</p><h1>Real stories. Better production. Smarter tools.</h1><p className="lede">We combine practical filming, editing and storytelling with selective AI tools to help people and organisations create work that looks stronger, communicates clearly and travels further.</p><div className="actions"><a className="primary" href={`${base}/contact/#media-brief-title`}>Prepare a project brief</a><a className="secondary" href={`${base}/services/`}>Explore services</a></div><p className="micro">Not “AI-only”. We shoot real people, real places and real work — then use technology where it adds value.</p></div><div className="heroPanel"><div className="frame"><strong>Capture</strong><small>Real-world phone-first production</small></div><div className="frame"><strong>Craft</strong><small>Edit, design, sound and story</small></div><div className="frame"><strong>Amplify</strong><small>AI-assisted finishing and distribution</small></div></div></section>
 
   <section className="section"><p className="eyebrow dark">THREE CONNECTED PILLARS</p><h2>Production, intelligence and skills in one creative system.</h2><div className="cards">{pillars.map(p=><article className="card" key={p.title}><h3>{p.title}</h3><p>{p.copy}</p><a className="textLink" href={`${base}${p.href}`}>Explore {p.title} →</a></article>)}</div></section>
 
@@ -23,5 +26,5 @@ export default function HomePage(){return <main><Header/>
 
   <section className="section"><div className="split"><div><p className="eyebrow dark">WHY THIS MODEL</p><h2>Small setup. Serious thinking.</h2></div><div><p className="copy">A disciplined phone-first workflow can move faster and cost less than a traditional production while still producing credible work. When a project genuinely needs more equipment, crew or specialist capability, we scope that deliberately instead of pretending one setup fits everything.</p><a className="textLink" href={`${base}/about/`}>How Talunza Media works →</a></div></div></section>
 
-  <section className="cta"><p className="eyebrow">START WITH THE IDEA</p><h2>Wedding, advert, drama, interview, training idea or AI project?</h2><p>Send the idea first. We will help shape the right production approach before quoting.</p><div className="actions"><a className="primary" href={whatsapp}>WhatsApp Talunza Media</a><a className="secondary" href={`${base}/contact/`}>Contact details</a></div></section><Footer/>
+  <section className="cta"><p className="eyebrow">START WITH THE IDEA</p><h2>Wedding, advert, drama, interview, training idea or AI project?</h2><p>Send the idea first. We will help shape the right production approach before quoting.</p><div className="actions"><a className="primary" href={`${base}/contact/#media-brief-title`}>Get a quote</a><a className="secondary" href={`${base}/contact/`}>Contact details</a></div></section><Footer/>
 </main>}

@@ -16,10 +16,9 @@ export const metadata: Metadata = {
     'AI training Zimbabwe', 'wedding videography Chiredzi', 'business adverts Zimbabwe',
     'phone filmmaking Zimbabwe', 'creator training Zimbabwe', 'AI studio Zimbabwe'
   ],
-  alternates: { canonical: `${siteUrl}/` },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } },
   openGraph: {
-    type: 'website', locale: 'en_ZW', siteName: 'Talunza Media', url: `${siteUrl}/`,
+    type: 'website', locale: 'en_ZW', siteName: 'Talunza Media',
     title: 'Talunza Media | Production, AI Studio & Academy',
     description: 'Real filming, better production, selective AI enhancement and practical training for Zimbabwean creators, businesses and communities.'
   },
