@@ -1,4 +1,7 @@
 import {Footer,Header,base,whatsapp} from './site';
+import {mediaRouteMetadata} from './media-route-metadata';
+
+export const metadata = mediaRouteMetadata('', 'Production, AI Studio and practical training', 'Video production, AI-assisted creative services and practical media training in Zimbabwe.');
 
 const pillars=[
   {title:'Media Production',copy:'Phone-first filming and production for weddings, events, dramas, interviews, creator content, adverts and business stories.',href:'/production/'},
