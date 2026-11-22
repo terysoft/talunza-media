@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "check": "npm run typecheck && npm run test:enquiry && npm run build",
-    "test:enquiry": "node --test tests/media-enquiry.test.mjs"
+    "check": "npm run typecheck && npm run test:enquiry && npm run test:seo && npm run build",
+    "test:enquiry": "node --test tests/media-enquiry.test.mjs",
+    "test:seo": "node --test tests/media-seo.test.mjs"
   },
   "dependencies": {
     "next": "15.5.2",
