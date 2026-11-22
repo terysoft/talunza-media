@@ -32,6 +32,8 @@ test('AI Studio drafts are preserved and do not inherit a forced nested canonica
 });
 
 test('Public quote pages use a local form, not a new backend or payment path',()=>{
+  const home=read('app/page.tsx');
+  assert.equal((home.match(/contact\/#media-brief-title/g)||[]).length,2);
   const contact=read('app/contact/page.tsx');
   const page=read('app/contact/MediaBriefBuilder.tsx');
   assert.ok(contact.includes('<MediaBriefBuilder/>'));
