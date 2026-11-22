@@ -1,3 +1,15 @@
 import {Footer,Header,PageHero,whatsapp} from '../site';
+import MediaBriefBuilder from './MediaBriefBuilder';
 
-export default function Contact(){return <main><Header/><PageHero kicker="CONTACT" title="Start with the outcome you want." copy="Send the project type, location, date or deadline, target audience and anything you already have. We will help shape the right production or training approach before quoting."/><section className="section"><div className="academyGrid"><article><h3>WhatsApp</h3><p>Best for project briefs, photos, reference videos, dates and quick questions.</p><a className="textLink" href={whatsapp}>Message 0777 323 918 →</a></article><article><h3>Call</h3><p>Useful when the project needs a quick conversation before we can scope it.</p><a className="textLink" href="tel:+263777323918">Call 0777 323 918 →</a></article><article><h3>What to send</h3><p>Goal · audience · location · date/deadline · expected outputs · references · available footage/assets · budget range if known.</p></article><article><h3>Coverage</h3><p>Chiredzi and the Lowveld first, with selected projects elsewhere depending on travel, logistics and scope.</p></article></div></section><section className="section process"><p className="eyebrow dark">FASTEST BRIEF</p><h2>Copy this structure into WhatsApp.</h2><div className="briefBox"><p><strong>Project:</strong> ____</p><p><strong>Location:</strong> ____</p><p><strong>Date/deadline:</strong> ____</p><p><strong>Audience:</strong> ____</p><p><strong>What I need delivered:</strong> ____</p><p><strong>Reference/examples:</strong> ____</p></div></section><Footer/></main>}
+export default function Contact(){return <main><Header/>
+  <PageHero kicker="CONTACT" title="Tell us what you need produced." copy="Share the project type, location, deadline and where the finished work will be used. We will discuss scope and availability before quoting."/>
+  <section className="section"><MediaBriefBuilder/></section>
+  <section className="section process"><p className="eyebrow dark">OTHER WAYS TO GET IN TOUCH</p>
+    <h2>Talk to the production team.</h2>
+    <div className="academyGrid">
+      <article><h3>WhatsApp</h3><p>Send photos, reference videos, questions or a prepared project brief.</p><a className="textLink" href={whatsapp}>Message 0777 323 918 →</a></article>
+      <article><h3>Phone</h3><p>Discuss location, availability and the type of work required.</p><a className="textLink" href="tel:+263777323918">Call 0777 323 918 →</a></article>
+      <article><h3>What helps us quote</h3><p>Audience · location · deadline · target channels · intended deliverables · references · available footage and materials.</p></article>
+      <article><h3>Coverage</h3><p>Chiredzi and the Lowveld first, with other locations assessed according to scope, travel and availability.</p></article>
+    </div>
+  </section><Footer/></main>}
