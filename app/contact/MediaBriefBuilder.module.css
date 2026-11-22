@@ -1,0 +1,12 @@
+.panel{max-width:1100px;margin:0 auto;padding:2rem;border:1px solid #dce5ec;border-radius:1.5rem;background:#fff;box-shadow:0 14px 40px rgba(13,35,52,.05)}
+.panel h2{font-size:clamp(2rem,3.2vw,3.1rem);line-height:1.08}.panel>p{max-width:58rem;color:#495e6b;line-height:1.6}
+.form{margin-top:1.5rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.form[hidden]{display:none!important}.form label{display:flex;flex-direction:column;gap:.35rem;font-size:.94rem;font-weight:760}
+.form :is(input,select,textarea){width:100%;min-height:48px;padding:.75rem .85rem;border:1px solid #92a8b6;border-radius:.6rem;background:#fff;color:#112e3d;font:inherit;font-weight:400}
+.form textarea{resize:vertical;min-height:112px}.wide{grid-column:1/-1}
+.prepare,.send{display:inline-flex;align-items:center;justify-content:center;width:max-content;min-height:48px;padding:.8rem 1.15rem;border:0;border-radius:.75rem;background:#0a5f8a;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}
+.prepare:hover,.send:hover{background:#084b70}.panel :is(button,a,input,textarea,select):focus-visible{outline:3px solid #126a99;outline-offset:3px}
+.preview{margin-top:1.5rem;padding:1.35rem;border:1px solid #a7c9ce;border-radius:1rem;background:#eef8f8}
+.preview h3{margin:.1rem 0 1rem}.preview pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.6;color:#152e39}
+.preview p,.fallback{color:#365466;line-height:1.5}@media(max-width:700px){.panel{padding:1.25rem}.form{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.panel *{scroll-behavior:auto}}
