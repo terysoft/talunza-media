@@ -80,3 +80,19 @@ Official Google Flow pages, consulted 2026-11-23:
 For a dance challenge, recognisable choreography is the product; spectacle is supporting presentation. Measure real remakes, saves, shares and actual user participation, not only view counts. The 12–15-second teachable derivative should follow the accepted full master, never be faked from footage where the gesture isn't actually present.
 
 **Next bounded action:** Generate V2 Clip 1 in a new Flow project using the original/approved temporary Big T reference and its one supplied prompt; share the resulting clip for real QA before extension. **No new V2 video clip, final edit, publication or identity-accurate digital double has been claimed here.**
+## 7. V2 Clip 1 observed evidence and changed plan — 2026-11-23
+
+**Actual new upload:** `1000546435.mp4`, received in founder chat after a Flow warning screenshot and a simpler reattempt. This is a new V2 clip, not a V1 derivative. Original clip content was inspected from a freshly mounted file; the preceding screenshot displayed a potential Flow-policy warning, but the exact accepted prompt and account credit debit are **not independently established**.
+
+- Uploaded file: **10.026667 seconds**, **720 × 1280**, **24 fps**, H.264 video + AAC audio, **4,029,952 bytes**.
+- Source SHA-256: `fca78c1823536f99db7ec3a7e22a0a007dba64632e39187633785605a995c5bd` (computed locally on current uploaded bytes; the MP4 is not stored in GitHub).
+- Reviewed sampled frames at 0.5-second/roughly 1-second intervals, with additional closer checks of 1.0–9.3 s, full-frame contact sheets and successful video decode.
+- **Positive:** one dancer; consistent navy clothing and white shoes; feet and hands generally visible; stable frontal camera, suitable end frame and physically plausible dancehall-style movement.
+- **Needs improvement:** no objectively obvious two-tap wrist-check; the brief chest-level crossing does not form a clearly held forearm X; dancing/stepping is energetic but not a reliably reproducible right-left-right + point sequence. These are observations of visible frames, not a judgment that the model follows every verbal timing instruction.
+- **Decision:** Preserve Clip 1 as a **10s groove/opening candidate / REVIEW CUT**, **not** an accepted instructional CLOCK-X demonstration. Do not silently rename it FINAL. Do not waste another generation recreating the same generic groove unless a specific review requirement demands it.
+- **Revision to V2 timing:** 0–10s establishes personality and rhythm; 10–20s should prioritize a **single clearly held NO-QUIT X** (two repetitions) with a simple step, without asking for Clock and Switch simultaneously; 20–30s should test one visible clock gesture and step-point ending. If the X still fails, keep the music/dance showcase concept and explicitly avoid selling the movement as a teachable routine; consider filming a real movement reference for a subsequent test.
+- **Sound:** source video contains AAC; it remains excluded from the planned final, where the founder's song is mixed alone. Rights clearance remains unknown.
+- **State:** CLIP_RECEIVED / PROBED / FRAME_INSPECTED; **V2 music source prepared**, CLIP 2/3 NOT GENERATED, FINAL NOT RENDERED, credits charged UNKNOWN.
+- **Workflow improvement:** Optimize prompts to **one discriminative gesture per 10-second extension**, confirm shape/hold via observed frames, and keep the original V2 target flexible rather than reusing failed multi-action instructions.
+
+This section **supersedes** the pre-generation 'next bounded action' above. Next action is one 10-second Flow Extend on the new V2 clip, followed by inspection of its resulting cumulative ~20-second export.
