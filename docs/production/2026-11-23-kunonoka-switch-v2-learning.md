@@ -96,3 +96,19 @@ For a dance challenge, recognisable choreography is the product; spectacle is su
 - **Workflow improvement:** Optimize prompts to **one discriminative gesture per 10-second extension**, confirm shape/hold via observed frames, and keep the original V2 target flexible rather than reusing failed multi-action instructions.
 
 This section **supersedes** the pre-generation 'next bounded action' above. Next action is one 10-second Flow Extend on the new V2 clip, followed by inspection of its resulting cumulative ~20-second export.
+
+## 8. V2 Clip 2 observed QA and adapt-to-evidence decision — 2026-11-23
+
+**Uploaded cumulative Flow export:** `1000546441.mp4` (full initial V2 + first extension, *not* a separate 10-second-only segment). Read directly from mounted user upload and decoded with FFmpeg.
+
+- Duration: **20.032s**; 720×1280, 24 fps, H.264/AAC; **7,065,251 bytes**; SHA-256 `7c16bd36a8f9381aadecc4bfad9974f2ebebce5b94d5ccc46f3a6dbcc4c162b8`.
+- Inspected full-span contact samples and sampled extension at **four frames/sec from 10.50–19.50s**. Local decode passed.
+- **Passed:** consistent single male dancer, navy tracksuit, white sneakers, fixed courtyard and lighting, feet/hands visible, expressive dancehall-inspired bouncing, no obvious catastrophic morphs; cumulative export suitable for one more extension.
+- **Failed choreographic acceptance test:** although the second prompt requested *two obvious one-second crossed-forearm X holds*, the observed extension shows ordinary arm sweeps, crossing/closing movements near chest, and sideways reaches. **Two held, large X silhouettes cannot be positively identified.** Precise repeated hand positions appear unreliable even after simplifying from three gestures to one.
+- **Decision:** Accept footage as GROOVE/SHOWCASE, but **do not label it a teachable Clock-X tutorial**. No third attempt at forcing the X, and do not infer exact timing/musical alignment before final soundtrack mix.
+- **Next V2 finish:** use ONE 10s extension for a simple beat-friendly step/bounce + shoulder accent + direct camera point + stable held pose; include no complex right-left-right hand sequence or competing X instructions. Final master expected cumulative ~30s; verify actual duration and re-score hook, body framing, source audio exclusion, rights and export QA before saying FINAL.
+- **Marketing:** #KunonokaSwitchChallenge remains a creative name. On-screen overlay should say `BIG T — KUNONOKA SWITCH` and `CAN YOU BEAT THIS MOVE?`, not diagrams claiming the dancer precisely performed an X that footage does not show.
+- **Learning:** Generative video is effective for *dance style and visual continuity* but currently less dependable for strict, repeated choreography. Source-vetted real motion reference or actual recorded dancer is the next economically rational test if precise tuition is a requirement; 3D rigging is not a prerequisite for this proof-of-concept.
+- **State:** V2 cumulative clip received/inspected 20.032s; **final 10s NOT YET GENERATED**, track mix/brand export NOT RENDERED, credit use UNKNOWN.
+
+This section supersedes prior clip-2 instructions as soon as the new export is accepted for retention.
