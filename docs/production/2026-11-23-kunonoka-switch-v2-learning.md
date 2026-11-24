@@ -138,3 +138,41 @@ This section supersedes prior clip-2 instructions as soon as the new export is a
 **Practical learning:** Before paying for a third extension, *probe the latest download*. An export with repeated first 10s and a new alternate second 10s is recoverable as a multi-take dance edit, but should not be mistaken for a continuous AI-created 30s take. For repetitive choreography that must be teachable, use recorded performer motion references in a future independent test. For this release, a truthful entertaining showcase is acceptable.
 
 **Status:** V2 local MASTER_RENDERED / TECHNICAL_QA_PASSED, pending conversation attachment/device acknowledgement and rights-based publication.
+
+## 10. Comparative V1 vs V2 film QA — 2026-11-24
+
+### Verified source files from founder chat
+- **V1 final** `BIGT_SWITCH_39S.mp4`: 39.000s, 720×1280, 24fps, H.264/AAC, 6,391,749 bytes; SHA-256 `4ff75ca948aa33169d5bc9966cf842b8f68ffcf739862b6562f8788339149b30`.
+- **V2 final** `BIGT_SWITCH_V2_30S.mp4`: 30.000s, 720×1280, 24fps, H.264/AAC, 6,022,798 bytes; SHA-256 `8b08e4e7f6a81579829b64cffe6d592b71d828999b6bfd8a8e975ae92f068cb0`.
+- Both were re-opened from actual mounted bytes, inspected using 2-second interval image sheets including beginning/middle/end, and probed with FFprobe. V2 is byte-for-byte identical to the stored export `KUNONOKA_SWITCH_V2_MASTER_30S.mp4`.
+- FFmpeg 8 kHz mono analysis cross-correlated both exported audio streams with the original user-supplied song: V1's music starts at **~20.0s**, normalized waveform correlation **~0.998**; V2 starts **~33.0s**, correlation **~0.990** (differences from AAC encoding/fades). Both music mixes truly originate from the source supplied; nothing proves commercial rights.
+- The V2 PCM average 1-second RMS was ~0.352 versus V1's ~0.322. The approximate 9% greater amplitude is **not** the same as perceptual loudness, creative quality or beat synchronization.
+
+### Movement comparison (approximate, not a dance scoring model)
+Central-dancer image motion was measured using Farnebäck optical flow between 0.25-second video samples, resized to 180×320, central crop x=45–140, y=25–270. This approximates pixel change and can be influenced by camera, lighting, captions and compression.
+
+| Interval | V1 mean optical-flow magnitude | V2 mean | Interpretation |
+|---|---:|---:|---|
+| 0–10s | 3.90 | 2.42 | V1 has a more dynamic opening by this rough proxy |
+| 10–20s | 2.75 | 2.81 | Broadly comparable movement |
+| 20–30s | 2.79 | 3.37 | V2's closing ten seconds show more movement |
+| Whole film | 2.97 | 2.87 | Similar motion activity overall; NOT an objective quality ranking |
+
+### Human visual assessment
+- **V1:** more spontaneous, varied gesture energy especially early; longer 39-second journey may be satisfying for a performance showcase but risks longer time-to-payoff.
+- **V2:** more focused 30-second cut; clean, readable titles and more concentrated final motion; but a deliberate edit at 20 seconds between distinct extension takes means it is **not** a single continuous Flow extension.
+- **Shared issue:** Clock/wristwatch tapping, crossed-forearm X, and precise step-point sequence are not consistently visible in either finished clip; both should be honestly marketed as **AI dance concept showcases** rather than reproducible dance tutorials.
+- **Audience unknown:** No platform analytics, true watch-time/retention curves, followers gained, saves, shares, duets/remakes or controlled viewer feedback was available in this comparison. Never claim V2 is empirically outperforming V1.
+- **Aesthetics vs choreography are different success dimensions:** Flow does a credible consistent dancer and recognisable atmosphere but isn't yet a deterministic motion-choreography engine.
+
+### Practical decision and proposed measured next experiment
+1. Preserve **both** V1 and V2 originals; no destructive overwrite or new default master designation.
+2. For attention-first testing, derive a **12–15s punchy cut** from the strongest *existing* gestures; test a V1-opening / V2-ending editorial cut as an optional creative variant, with a clear edit and no fake continuity.
+3. In a rights-cleared campaign, compare similar posting conditions. Record at least: impressions/3-second view-through, mean watch percentage and completion rate by duration, saves per 1k views, shares per 1k, genuine remakes, and follower conversion per 1k views. Do not treat likes as follower conversion. Interpret small sample sizes cautiously.
+4. To make a truly teachable named dance, film a real human performing 1 simple eight-count at fixed full-body camera, then use that motion as a reference/control; only consider 3D rigging after verifying the cost/control benefit of actual motion capture. The choreography must be clear in source motion rather than requested as complicated prose alone.
+5. Maintain evidence gates: input/media rights, identity likeness consent, no duplicated sections in cumulative exports, fixed brand overlays, audio-source-only mix, actual handset download confirmation and publication state.
+
+### Durable learning
+**Strong opening ≠ strongest ending; energy ≠ accurate choreography; short duration ≠ proven higher retention; newer file ≠ better creative.** Treat every production as a measurable hypothesis. Re-use good footage, track repairs and hypotheses, and preserve the creative series without inflating quality claims.
+
+**Review state:** comparison conducted from actual local MP4 bytes and sampled frames; conclusions from pixel movement are supporting diagnostics only. This comparison is documented in a DRAFT PR; no analytics, publishing or real-dancer benchmark performed.
