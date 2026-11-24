@@ -176,3 +176,37 @@ Central-dancer image motion was measured using Farnebäck optical flow between 0
 **Strong opening ≠ strongest ending; energy ≠ accurate choreography; short duration ≠ proven higher retention; newer file ≠ better creative.** Treat every production as a measurable hypothesis. Re-use good footage, track repairs and hypotheses, and preserve the creative series without inflating quality claims.
 
 **Review state:** comparison conducted from actual local MP4 bytes and sampled frames; conclusions from pixel movement are supporting diagnostics only. This comparison is documented in a DRAFT PR; no analytics, publishing or real-dancer benchmark performed.
+
+## 11. American street-dance reference study — 2026-11-24
+
+**Intent:** Founder requested studying American dances on YouTube to improve the next TALUNZA dance challenge. Preserve distinctions between videos actually watched, only discovered, and hypotheses.
+
+### Direct video observation: Jersey Rock
+- Video: *How to JerseyRock | JerseyClub Dance Tutorial*, by JerseyMadeRich; 30-second YouTube upload, https://www.youtube.com/watch?v=BzDKHeiOoIQ.
+- Observation method: An actual timestamped visual scene breakdown produced through the connected vidIQ short-form video watch capability on 2026-11-24. This is analysis of the video, not an assumption from its title or metadata.
+- **0:00–0:04:** ready stance and title introduction; fixed full-body vertical framing.
+- **0:04–0:09:** single foot step sideways then returning to center.
+- **0:09–0:15:** alternate directions and increase stepping tempo.
+- **0:16–0:20:** add soft bent-knee bounce, shoulder pulses and chest accents.
+- **0:21–0:24:** counterbalancing arms swing opposite the stepping leg.
+- **0:25–0:30:** combine learned footwork and upper-body layers into full-speed practice.
+- **Core learning:** The clip does not require a viewer to memorize unrelated gestures at once. Its footwork pattern is established before extra layers are introduced. Its full-body locked framing is vital for seeing each foot placement.
+
+### Additional references discovered, not visually verified this run
+- *Easiest step in Cwalk footwork V-step*, JD Dance Tutorial, 15 seconds: https://www.youtube.com/watch?v=RbFLDYPSGY0. Search metadata suggests beginner V-step explanation; no direct frame breakdown was performed because the vidIQ visual-analysis credit budget reached its limit.
+- *How to Dougie*, Howcast: https://www.youtube.com/watch?v=MrH6EbHhdvE. YouTube transcript excerpt supports a layered 2-step + up/down body motion + single/single/double rhythm + rolling arms teaching sequence. This is transcript-derived, **not a direct watch** of that video.
+- *Hit Dem Folks dance tutorial by the originator*, https://www.youtube.com/watch?v=yVYE88RMd4E. The video's public title/description establish that it is a step-by-step tutorial; choreography itself was not watched or independently verified here.
+- *Jersey Club Dance Tutorial “Lock in” Tik Tok Trends 2026*, Good Foot Dance Studio, https://www.youtube.com/watch?v=BPkUHEeRxDo. Metadata/description only; not watched in this run.
+
+### Implication for Kunonoka Switch V3 (proposal, not footage)
+- Replace the unreliable multi-gesture Clock/X specification with a **single anchor stepping loop**: (1) side step out, (2) return to center, (3) other side, (4) return, (5) two grounded bounces, (6) one synchronized shoulder accent and camera point. Exact musical count to be tested against the *actual supplied recording*; no claim that this is already original or validated choreography.
+- Create a video showing **step only**, followed by **step+bounce**, then **step+bounce+shoulder/point**, ideally with an actual filmed dancer performing the action as a reference. Prompting Flow with multiple exact arm gestures had failed in V1/V2 even after isolating the X move.
+- Start by producing a 10–15-second full-body lesson and a separate performance cut; keep the 30–39-second cinematic montage as an optional longer promotional derivative. Evaluate actual visual accuracy before generating further paid segments. Avoid replicating another choreographer's complete sequence or claiming its moves were invented by TALUNZA.
+- Metrics to test after authorized release: retention/completion, saves, shares, genuine viewer attempts and remakes; views alone cannot validate a replicable dance.
+
+### Execution and evidence limits
+- One American tutorial was visually analyzed; other references were discovered or reviewed at title/description/transcript level. Do not write “watched four videos”.
+- vidIQ spent 5 credits on YouTube search and 10 credits on one actual watch; account reported **5 credits remaining**, next renewable credit reset **2026-12-14T07:01:30Z**. Two additional watch requests were rejected before charging. Do not deplete remaining credits merely to lengthen a reference list.
+- No new original choreography video, Flow generation or song remix has been executed as part of this research turn.
+
+**Durable lesson:** Teach the single base groove first and add one layer at a time. Show every foot contact clearly. Distinctive repeatability—not number of actions per prompt—is the first gate for a dance challenge.
