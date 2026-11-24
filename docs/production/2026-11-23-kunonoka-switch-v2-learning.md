@@ -112,3 +112,29 @@ This section **supersedes** the pre-generation 'next bounded action' above. Next
 - **State:** V2 cumulative clip received/inspected 20.032s; **final 10s NOT YET GENERATED**, track mix/brand export NOT RENDERED, credit use UNKNOWN.
 
 This section supersedes prior clip-2 instructions as soon as the new export is accepted for retention.
+
+## 9. Final V2 assembly from two parallel extensions — 2026-11-24
+
+**Correction to the expected final Flow export:** Founder uploaded `1000546535.mp4`, but this file is only **20.032 seconds** (not cumulative 30 seconds). Frame comparison against `1000546441.mp4` revealed that their *first 10 seconds are substantially the same* (small re-encoding differences), while their **10–20 second sections are different dance performances**. The latest export therefore appears to be an alternate extension of the original 10-second clip, **not** an extension of the 20-second cumulative V2 clip. Do not present it as a 30-second Flow generation.
+
+**Preserved sources and SHA-256**
+- Prior cumulative 20-second video `1000546441.mp4`: `7c16bd36a8f9381aadecc4bfad9974f2ebebce5b94d5ccc46f3a6dbcc4c162b8`
+- Alternate 20-second video `1000546535.mp4`: `9a6b4b6ee70699407e34094f6b5778330726bc8a944f3bd14e38fcbf7b5c2af4` (20.032s, 720×1280, 24fps, H.264/AAC)
+- Founder-provided song's existing 30s selection `KUNONOKA_V2_30S.mp3`: `6c05da4cefa60283bcf81622a06d53461b10233035da0713ee7ddcad07511a6f` (30.04s MP3)
+- Final export `KUNONOKA_SWITCH_V2_MASTER_30S.mp4`: `8b08e4e7f6a81579829b64cffe6d592b71d828999b6bfd8a8e975ae92f068cb0` (**30.000s**, 720×1280, 24fps, H.264/AAC, **6,022,798 bytes**)
+
+**Editorial recovery decision, zero additional Flow generation:** Use **0–20s** of the earlier cumulative video, then the **10.032–19.532s** distinct section of the latest video, adding a 0.5s held final frame to reach ~30 seconds. This creates a deliberate edit at 20s, *not* a seamless new AI extension. Add a brief blue flash/title `SWITCH!` to motivate the beat cut. Preserve all original uploads. Important: do not accidentally double the shared 0–10s section.
+
+**Post-production completed in a local container:** First attempt to render 7 RGBA overlays in one FFmpeg graph was killed by a memory/resource limit, leaving an unusable partial output. Recovered with a **two-stage render**: (1) trim/concatenate base video with 2-thread FFmpeg (silent); (2) apply 14 time-gated Inter-font drawtext lines, understated top banner/corner lines and one flash, while mapping **only the founder-provided MP3** as audio. Audio fade at start/end; original Flow tracks are excluded. No real 3D rig or new AI model used.
+
+**Output QA**
+- `ffprobe`: 30.000s, H.264 video 720×1280 at 24 fps, AAC audio, MP4 `+faststart`.
+- Complete FFmpeg decode and final-second decode: **PASS**.
+- Start/middle/end sampled stills reviewed, legible on-frame titles; framing preserves the dancer's shoes and face. Character/courtyard consistent enough for an AI-dance prototype, but clip cut at 20s is an intentionally stylized edit.
+- Accurate creative label: **AI DANCE CONCEPT**. Avoid claiming exact CLOCK-X choreography was followed. Branding: `BIG T × TALUNZA`, `KUNONOKA SWITCH V2`, `CAN YOU BEAT BIG T?` and `#KunonokaSwitchChallenge`.
+- Source song rights for commercial social posting: **UNVERIFIED; obtain permission/licence or use platform-licensed audio as appropriate**.
+- Actual Android download, online publication, challenge performance and engagement: **NOT VERIFIED**. Video source and soundtrack originals not committed to GitHub.
+
+**Practical learning:** Before paying for a third extension, *probe the latest download*. An export with repeated first 10s and a new alternate second 10s is recoverable as a multi-take dance edit, but should not be mistaken for a continuous AI-created 30s take. For repetitive choreography that must be teachable, use recorded performer motion references in a future independent test. For this release, a truthful entertaining showcase is acceptable.
+
+**Status:** V2 local MASTER_RENDERED / TECHNICAL_QA_PASSED, pending conversation attachment/device acknowledgement and rights-based publication.
